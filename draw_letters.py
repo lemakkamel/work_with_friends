@@ -3,9 +3,9 @@ def make_draw(letter, i):
     print(" " * 4, end="")
     if (letter=="a" and i ==1):
         print(" " + "*" * 2 + " ", end="")
-    if (letter=="a" and i ==2)or(letter=="a" and i ==4)or(letter=="a" and i ==5) :
+    if (letter=="a" and (i ==2 or i ==4 or i ==5))or(letter=="h" and (i ==1 or i ==2 or i ==4 or i ==5)) :
         print("*" + " " * 2 + "*", end="")
-    if (letter=="a" and i ==3):
+    if ((letter=="a" or letter=="h") and i ==3):
         print("*" * 4, end="")
     if ((letter=="k" and i ==3)or (letter=="l"and (i==1 or i==2 or i==3 or i==4))):
         print("*" + " " * 2, end="")
