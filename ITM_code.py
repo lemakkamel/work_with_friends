@@ -1,4 +1,4 @@
-def iTM(request):
+def atm_function(request):
 	if request>500 or request<0:
 		print "you can't"
 	else:
@@ -18,4 +18,4 @@ def iTM(request):
 			if request < 5 and request != 0:
 				print "give ", request
 				request = 0
-iTM(277)
+atm_function(277)
