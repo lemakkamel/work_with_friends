@@ -3,15 +3,19 @@ def make_draw(letter, i):
     print(" " * 4, end="")
     if (letter=="a" and i ==1):
         print(" " + "*" * 2 + " ", end="")
-    if (letter=="a" and (i ==2 or i ==4 or i ==5))or(letter=="h" and (i ==1 or i ==2 or i ==4 or i ==5)) :
+    if (letter=="a" and (i ==2 or i ==4 or i ==5)) \
+        or(letter=="h" and (i ==1 or i ==2 or i ==4 or i ==5)) :
         print("*" + " " * 2 + "*", end="")
-    if ((letter=="a" or letter=="h") and i ==3):
+    if ((letter=="a" or letter=="h") and i ==3) \
+        or (letter == "e" and (i == 1 or i == 3 or i == 5)):
         print("*" * 4, end="")
-    if ((letter=="k" and i ==3)or (letter=="l"and (i==1 or i==2 or i==3 or i==4))):
-        print("*" + " " * 2, end="")
+    if ((letter=="k" and i ==3) \
+        or (letter=="l"and (i==1 or i==2 or i==3 or i==4)) \
+        or (letter == "e" and (i == 2 or i == 4))):
+        print("*" + " " * 3, end="")
     if (letter == "k" and (i == 1 or i == 5)or(letter=="l"and i==5 )):
         print("*" + " " + "*", end="")
-    if (letter == "k" and i == 2) or (letter == "k" and i == 4):
+    if (letter == "k" and (i == 2 or i == 4)):
         print("*" * 2 + " ", end="")
 
 def draw_letter(string):
