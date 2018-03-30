@@ -1,4 +1,5 @@
 import models
+import stores
 
 member1=models.Member("Bahaa",5)
 member2=models.Member("wassim",10)
@@ -24,13 +25,13 @@ print post3.post_title
 print post3.post_content
 
 
-member_store = models.MemberStore()
+member_store = stores.MemberStore()
 member_store.add(member1.name)
 member_store.add(member2.name)
 print "+"*15+"This will print all members !!"+"+"*15
 print member_store.get_all()
 print "+"*15+"This will print all posts !!"+"+"*15
-post_stor=models.PostStore()
+post_stor=stores.PostStore()
 post_stor.add(post1.post_title)
 post_stor.add(post2.post_title)
 post_stor.add(post3.post_title)
