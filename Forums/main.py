@@ -22,3 +22,16 @@ print post2.post_content
 print "="*7+"This is third post "+"="*7
 print post3.post_title
 print post3.post_content
+
+
+member_store = models.MemberStore()
+member_store.add(member1.name)
+member_store.add(member2.name)
+print "+"*15+"This will print all members !!"+"+"*15
+print member_store.get_all()
+print "+"*15+"This will print all posts !!"+"+"*15
+post_stor=models.PostStore()
+post_stor.add(post1.post_title)
+post_stor.add(post2.post_title)
+post_stor.add(post3.post_title)
+print post_stor.get_all()
