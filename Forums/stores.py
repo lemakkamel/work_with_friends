@@ -4,8 +4,8 @@ class MemberStore():
     def __init__(self):
         pass
 
-    def add(self,member_name):
-        self.members.append(member_name)
+    def add(self,member):
+        self.members.append(member.name)
 
     def get_all(self):
          return self.members
@@ -18,7 +18,7 @@ class PostStore:
         pass
 
     def add(self, post):
-        self.posts.append(post)
+        self.posts.append(post.post_title)
 
     def get_all(self):
         return self.posts

@@ -22,14 +22,14 @@ print post3
 
 
 member_store = stores.MemberStore()
-member_store.add(member1.name)
-member_store.add(member2.name)
-member_store.add(member3.name)
+member_store.add(member1)
+member_store.add(member2)
+member_store.add(member3)
 print "+"*15+"This will print all members !!"+"+"*15
 print member_store.get_all()
 print "+"*15+"This will print all posts !!"+"+"*15
 post_stor=stores.PostStore()
-post_stor.add(post1.post_title)
-post_stor.add(post2.post_title)
-post_stor.add(post3.post_title)
+post_stor.add(post1)
+post_stor.add(post2)
+post_stor.add(post3)
 print post_stor.get_all()
