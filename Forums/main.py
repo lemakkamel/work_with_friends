@@ -33,3 +33,8 @@ post_stor.add(post1)
 post_stor.add(post2)
 post_stor.add(post3)
 print post_stor.get_all()
+print "-"*40
+print member_store.get_by_id(1)
+print member_store.entity_exists(member1)
+member_store.delete(1)
+print member_store.entity_exists(member1)
